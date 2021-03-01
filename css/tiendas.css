@@ -1,0 +1,38 @@
+@font-face{
+    src: url('tipografia/Exorcista_-Jed_40.ttf');
+    font-family: Exorcista;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header>div{
+    font-family: Exorcista;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #260101;
+    padding: 0.15em 2em;
+}
+div{
+    width: 30%;
+}
+div>a{
+   
+    width: auto;
+    color: #D99923;
+}
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav a{
+    color: #FCFBF8;
+    padding: 1em 1em;
+}
