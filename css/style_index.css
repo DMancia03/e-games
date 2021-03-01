@@ -1,0 +1,51 @@
+@font-face{
+    src: url('tipografia/Exorcista_-Jed_40.ttf');
+    font-family: Exorcista;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #590C0C;
+    position: fixed;
+}
+
+header div{
+    width: 30%;
+    box-sizing: border-box;
+}
+
+header div a{
+    text-decoration: none;
+}
+
+header div h1{
+    font-family: Exorcista;
+    color: #260101;
+    padding-left: 1em;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a{
+    padding: 1em;
+    text-decoration: none;
+    color: #FCFBF8;
+}
+
+nav a:hover{
+    background-color: #260101;
+}
