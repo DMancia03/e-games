@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #590c0c;
+}
 header>div{
     font-family: Exorcista;
 }
@@ -14,25 +17,120 @@ a{
     color: black;
 }
 header{
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: #260101;
     padding: 0.15em 2em;
 }
-div{
+header div{
     width: 30%;
 }
 div>a{
-   
     width: auto;
     color: #D99923;
 }
 nav{
-    width: 70%;
+    width: 65%;
     display: flex;
     justify-content: flex-end;
 }
 nav a{
     color: #FCFBF8;
     padding: 1em 1em;
+}
+img{
+    width: 100px;
+}
+section{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+article{
+    grid-column: 2/12;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+}
+section h1{
+    font-family: Exorcista;
+    text-align: center;
+    font-size: 2em;
+    color: #8c030e;
+    text-shadow: #D99923 2px 2px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.tienda{
+    grid-column: 2/12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    margin: 1% 0;
+    padding: 1em;
+}
+.tienda h2{
+    text-align: center;
+}
+.tienda h2 span{
+    font-family: Exorcista;
+}
+img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#steam{
+    color: white;
+    background: linear-gradient(#0C2E54,#081B39,#0A2342,#0C294B,#0D2443,#0B2848,#0C2E54);
+    border: black solid 2px;
+
+}
+
+#steam div div{
+    background-color: green;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#steam div div a{
+    color: white;
+}
+.tienda div img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+#epic{
+    color: white;
+    background-color: #1F1F1F;
+}
+#epic div div{
+    color: white;
+    border: white 1px solid;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+#epic div div a{
+    color: white;
+}
+#eshop{
+    border: orange 2px solid; 
+}
+.tienda p{
+    padding: 1em;
+}
+#eshop div div{
+    border: orange solid 2px;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
 }
