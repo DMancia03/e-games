@@ -1,0 +1,121 @@
+@font-face{
+    src: url('tipografia/Exorcista_-Jed_40.ttf');
+    font-family: Exorcista;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #260101;
+    position: fixed;
+}
+
+header div{
+    width: 30%;
+    box-sizing: border-box;
+}
+
+header div a{
+    text-decoration: none;
+}
+
+header div h1{
+    font-family: Exorcista;
+    color: #D99923;
+    padding-left: 1em;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a{
+    padding: 1em;
+    text-decoration: none;
+    color: #FCFBF8;
+}
+
+nav a:hover{
+    background-color: #590C0C;
+}
+
+.padding-1{
+    margin: 2em;
+}
+
+.exorcista{
+    font-family: Exorcista;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-b{
+    font-weight: bold;
+}
+
+.img-1{
+    display: block;
+    margin: auto;
+}
+
+.title-1{
+    color: #590C0C;
+    text-align: center;
+}
+
+.enlace-1{
+    text-align: center;
+}
+
+.enlace-2{
+    color: #590C0C;
+}
+
+.text-k{
+    font-style: italic;
+}
+
+.title-2{
+    color: #826E56;
+}
+
+section{
+    padding-top: 3em;
+}
+
+#producto{
+    display: flex;
+    flex-direction: row;
+    background-color: #8C030E;
+}
+
+.exorcista{
+    color: #D99923;
+    text-align: center;
+    font-family: Exorcista, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fila-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer{
+    background-color: #590C0C;
+    padding: 1em;
+    text-align: center;
+    color: #FCFBF8;
+}
