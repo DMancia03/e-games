@@ -1,0 +1,30 @@
+@media(max-width: 900px){
+    .normal{
+        display: none;
+    }
+    #checkbox{
+        display: none;
+    }
+    .responsive nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #260101;
+        width: 80%;
+        left: -100%;
+        top: 100%;
+        transition:  500ms;
+    }
+    #checkbox:checked~nav{
+        left: 0;
+        transition:  500ms;
+
+    }
+}
+label{
+    color: white;
+    font-size: 50px;
+}
+.responsive>div{
+    text-align: center;
+}

@@ -89,6 +89,8 @@ img{
 #steam{
     color: white;
     background: linear-gradient(#0C2E54,#081B39,#0A2342,#0C294B,#0D2443,#0B2848,#0C2E54);
+    background: -o-linear-gradient(#0C2E54,#081B39,#0A2342,#0C294B,#0D2443,#0B2848,#0C2E54);
+    background: -webkit-linear-gradient(#0C2E54,#081B39,#0A2342,#0C294B,#0D2443,#0B2848,#0C2E54);
     border: black solid 2px;
 
 }
@@ -139,4 +141,15 @@ img{
 }
 .tienda div div{
     border-radius: 5px;
+}
+@media(max-width: 1000px){
+    .tienda{
+        grid-column: 1/13;
+    }
+    article{
+        grid-column: 1/13;
+    }
+    .tienda *{
+        grid-column: 1/3;
+    }
 }
