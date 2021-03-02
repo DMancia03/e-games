@@ -8,6 +8,11 @@
     #checkbox{
         display: none;
     }
+    .responsive{
+        display: inline-flex;
+        width: 86%;
+
+    }
     .responsive nav{
         position: absolute;
         display: flex;
