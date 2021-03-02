@@ -108,9 +108,9 @@ section{
     font-family: Exorcista, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#fila-4{
+#fila-3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer{
