@@ -134,3 +134,9 @@ img{
     text-align: center;
     margin: 0 auto;
 }
+#eshop h2{
+    color: orange;
+}
+.tienda div div{
+    border-radius: 5px;
+}
