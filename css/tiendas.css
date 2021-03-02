@@ -37,6 +37,7 @@ nav{
 nav a{
     color: #FCFBF8;
     padding: 1em 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -84,6 +85,7 @@ img{
 .grid5{
     display: grid;
     grid-template-columns: repeat(5,1fr) ;
+    grid-template-rows: repeat(4, 1fr) ;
 }
 .grid5 figure{
     margin: 0 1%;
@@ -94,14 +96,15 @@ img{
     font-size: 2em;
 }
 iframe{
-    width: 50%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     display: block;
 }
 .video{
     background-color: #260101;
-
+    grid-column: 1/6;
+    grid-row: 2/5;
 }
 .col11{
     grid-column: 2/12;
@@ -110,6 +113,7 @@ iframe{
     border-radius: 10px;
     box-shadow: 1px 1px gray;
     grid-template-columns: repeat(3,1fr);
+    margin: 1%;
 }
 .col11 .texto{
     grid-column: 2/13;
