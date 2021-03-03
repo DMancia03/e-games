@@ -16,28 +16,45 @@ a{
     color: black;
 }
 header{
-    position: relative;
     display: flex;
     flex-direction: row;
+    width: 100%;
     background-color: #260101;
-    padding: 0.15em 2em;
+    position: fixed;
 }
+
 header div{
     width: 30%;
+    box-sizing: border-box;
 }
-div>a{
-    width: auto;
+
+header div a{
+    text-decoration: none;
+}
+
+header div h1{
+    font-family: Exorcista;
     color: #D99923;
+    padding-left: 1em;
 }
+
 nav{
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
 }
+
 nav a{
+    padding: 1em;
+    text-decoration: none;
     color: #FCFBF8;
-    padding: 1em 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a:hover{
+    background-color: #590C0C;
 }
 .grid{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -8,9 +8,14 @@
     #checkbox{
         display: none;
     }
+    #menu-titulo1{
+        text-align: center;
+        width: 100%;
+    }
     .responsive{
-        display: inline-flex;
-        width: 86%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
 
     }
     .responsive nav{
@@ -18,10 +23,14 @@
         display: flex;
         flex-direction: column;
         background-color: #260101;
-        width: 80%;
+        width: 100%;
         left: -100%;
         top: 100%;
         transition:  500ms;
+    }
+    .responsive nav a{
+        width: 100%;
+        text-align: center;
     }
     #checkbox:checked~nav{
         left: 0;
@@ -31,7 +40,8 @@
 }
 label{
     color: white;
-    font-size: 50px;
+    font-size: 2em;
+    font-weight: bold;
 }
 .responsive>div{
     text-align: center;
