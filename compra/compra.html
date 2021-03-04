@@ -79,26 +79,26 @@
                     <div class="border-1 padding-2">
                         <div class="padding-1 div-form">
                             <label for="txtCliente" class="label-1">Nombre:</label>
-                            <input type="text" name="txtCliente" id="txtCliente" class="input-1" placeholder="Nombre de usuario" oninput="nameU(this)" autofocus>
+                            <input type="text" name="txtCliente" id="txtCliente" class="input-1" placeholder="Nombre de usuario" maxlength="20" oninput="nameU(this)" autofocus>
                         </div>
                         <div class="padding-1 div-form">
                             <label for="txtCorreo" class="label-1">Correo:</label>
-                            <input type="text" name="txtCorreo" id="txtCorreo" class="input-1" placeholder="Correo electrónico" oninput="correoU(this)">
+                            <input type="text" name="txtCorreo" id="txtCorreo" class="input-1" placeholder="Correo electrónico" maxlength="20" oninput="correoU(this)">
                         </div>
                     </div>
                     <div class="border-1 padding-2">
                         <div class="padding-1 div-form">
                             <label for="slctPlataforma" class="label-1">Plataforma:</label>
-                            <select name="slctPlataforma" id="slctPlataforma" class="input-1">
+                            <select name="slctPlataforma" id="slctPlataforma" oninput="disableCantidad(this)" class="input-1" disabled>
                                 <option value="">Elige una plataforma</option>
                                 <option value="Steam">Steam</option>
                                 <option value="Epic Game Store">Epic Game Store</option>
-                                <option value="Nitendo eShop">Nitendo eShop</option>
+                                <option value="Nintendo eShop">Nintendo eShop</option>
                             </select>
                         </div>
                         <div class="padding-1 div-form">
                             <label for="txtCantidad" class="label-1">Cantidades:</label>
-                            <input type="number" name="txtCantidad" id="txtCantidad" class="input-1" placeholder="¿Cuántos compraras?" oninput="cotizacion(this)">
+                            <input type="number" name="txtCantidad" id="txtCantidad" class="input-1" placeholder="¿Cuántos compraras?" min="0" max="10" oninput="cotizacion(this)" disabled>
                         </div>
                     </div>
                     <div class="border-1 padding-2">
@@ -106,11 +106,11 @@
                             <h3 class="title-1">Cotización</h3>
                         </div>
                         <div class="padding-1">
-                            <p class="factura-1" id="nombre">No hay datos ingresados.</p>
-                            <p class="factura-1" id="correo">No hay datos ingresados.</p>
-                            <p class="factura-1" id="subtotal">No hay datos ingresados.</p>
-                            <p class="factura-1" id="iva">No hay datos ingresados.</p>
-                            <p class="factura-1" id="total">No hay datos ingresados.</p>
+                            <p class="factura-1" id="nombre">Nombre: No ingresado.</p>
+                            <p class="factura-1" id="correo">Corre del titular: No ingresado.</p>
+                            <p class="factura-1" id="subtotal">Subtotal: 0</p>
+                            <p class="factura-1" id="iva">Iva: 0</p>
+                            <p class="factura-1" id="total">Total: 0</p>
                         </div>
                         <div class="padding-2">
                             <button type="button" name="btnComprar" id="btnComprar" value="comprar" class="btn-1" onclick="compra()" disabled>Comprar</button>
