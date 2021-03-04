@@ -54,6 +54,10 @@ nav a:hover{
     margin: 2em;
 }
 
+.padding-2{
+    margin: 1em;
+}
+
 .exorcista{
     font-family: Exorcista;
 }
@@ -69,6 +73,7 @@ nav a:hover{
 .img-1{
     display: block;
     margin: auto;
+    width: 100%;
 }
 
 .title-1{
@@ -92,6 +97,39 @@ nav a:hover{
     color: #826E56;
 }
 
+.border-1{
+    border-radius: 10px;
+    border: #260101 solid 1px;
+}
+
+.label-1{
+    color: black;
+    font-size: 1em;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-1{
+    border: none;
+    border-bottom: #260101 solid 2px;
+    padding: 1em;
+}
+
+.btn-1{
+    padding: 1em;
+    color: white;
+    background-color: #260101;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-1:hover{
+    background-color: #590C0C;
+}
+
 section{
     padding-top: 3em;
 }
@@ -111,6 +149,29 @@ section{
 #fila-3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#row-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+
+#fila-2{
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+}
+
+#grid-2-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.factura-1{
+    text-align: center;
+    color: darkslategrey;
 }
 
 footer{

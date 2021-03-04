@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/tipografia/style.css">
+    <script src="../js/script_compra.js"></script>
 </head>
 <body>
     <header class="normal">
@@ -16,7 +17,7 @@
             <a href="../index.html"><h1>E-GAMES</h1></a>
         </div>
         <nav>
-            <a href="../tiendas/index.html">Más tiendas</a>
+            <a href="../tiendas/index.html">Ver juego de la semana</a>
             <a href="../compra/compra.html">Comprar aquí</a>
         </nav>
     </header>
@@ -30,7 +31,7 @@
         </div>
         
         <nav>
-            <a href="../tiendas/index.html">Más tiendas</a>
+            <a href="../tiendas/index.html">Ver juegos de la semana</a>
             <a href="../compra/compra.html">Comprar aquí</a>
         </nav>
     </header>
@@ -48,21 +49,21 @@
                         salvaje fuga del Inframundo en este juego de exploración de mazmorras 
                         de los creadores de Bastion, Transistor y Pyre."</p>
                 </div>
-                <div id="fila-3">
-                    <div id="plataformas" class="padding-1">
+                <div id="fila-3" class="padding-1">
+                    <div id="plataformas">
                         <h2 class="title-2">Plataformas:</h2>
                         <p>Steam</p>
                         <p>Epic Game Store</p>
                         <p>Nintendo eShop</p>
                     </div>
-                    <div class="padding-1">
+                    <div>
                         <h2 class="title-2">Existencias:</h2>
-                        <p>10</p>
-                        <p>10</p>
-                        <p>10</p>
-                        <p>Total: 30</p>
+                        <p id="existencias_steam">10</p>
+                        <p id="existencias_epic">10</p>
+                        <p id="existencias_nintendo">10</p>
+                        <p id="existencias_total">Total: 30</p>
                     </div>
-                    <div class="padding-1">
+                    <div>
                         <h2 class="title-2" >Precio:</h2>
                         <p>$20.00 EU</p>
                     </div>
@@ -71,7 +72,54 @@
         </article>
         <article id="cotizacion">
             <form action="">
-                <h2>Cotización</h2>
+                <div class="padding-1">
+                    <h2 class="title-1">Compra</h2>
+                </div>
+                <div id="row-4">
+                    <div class="border-1 padding-2">
+                        <div class="padding-1 div-form">
+                            <label for="txtCliente" class="label-1">Nombre:</label>
+                            <input type="text" name="txtCliente" id="txtCliente" class="input-1" placeholder="Nombre de usuario" oninput="nameU(this)" autofocus>
+                        </div>
+                        <div class="padding-1 div-form">
+                            <label for="txtCorreo" class="label-1">Correo:</label>
+                            <input type="text" name="txtCorreo" id="txtCorreo" class="input-1" placeholder="Correo electrónico" oninput="correoU(this)">
+                        </div>
+                    </div>
+                    <div class="border-1 padding-2">
+                        <div class="padding-1 div-form">
+                            <label for="slctPlataforma" class="label-1">Plataforma:</label>
+                            <select name="slctPlataforma" id="slctPlataforma" class="input-1">
+                                <option value="">Elige una plataforma</option>
+                                <option value="Steam">Steam</option>
+                                <option value="Epic Game Store">Epic Game Store</option>
+                                <option value="Nitendo eShop">Nitendo eShop</option>
+                            </select>
+                        </div>
+                        <div class="padding-1 div-form">
+                            <label for="txtCantidad" class="label-1">Cantidades:</label>
+                            <input type="number" name="txtCantidad" id="txtCantidad" class="input-1" placeholder="¿Cuántos compraras?" oninput="cotizacion(this)">
+                        </div>
+                    </div>
+                    <div class="border-1 padding-2">
+                        <div class="padding-2">
+                            <h3 class="title-1">Cotización</h3>
+                        </div>
+                        <div class="padding-1">
+                            <p class="factura-1" id="nombre">No hay datos ingresados.</p>
+                            <p class="factura-1" id="correo">No hay datos ingresados.</p>
+                            <p class="factura-1" id="subtotal">No hay datos ingresados.</p>
+                            <p class="factura-1" id="iva">No hay datos ingresados.</p>
+                            <p class="factura-1" id="total">No hay datos ingresados.</p>
+                        </div>
+                        <div class="padding-2">
+                            <button type="button" name="btnComprar" id="btnComprar" value="comprar" class="btn-1" onclick="compra()" disabled>Comprar</button>
+                        </div>
+                    </div>
+                    <div class="padding-1">
+                        <img src="../img/hades-3.jpg" alt="Hades" class="img-1">
+                    </div>
+                </div>
             </form>
         </article>
     </section>
