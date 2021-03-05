@@ -1,3 +1,13 @@
+/*
+    En este código JS además de incluir la función para la cotización del producto, añade funcionalidades
+    extras que van de acuerdo a la idea del negocio. Siendo la primera de ellas, que al no colocar
+    nombre o correo en los datos, no se puede comprar nada; al colocarlos, tambien es necesario que
+    seleccione una plataforma para comprar el juego y si cumplio esos requisitos podra realizar la
+    cotizacion y comprar el juego. Además, la cotización no es necesaria hacerla con el botón pues
+    al colocar una cantidad de productos, esta se hace sola. Y por última, al realizar la compra
+    se verifica que la cantidad sea de acuerdo a las existencias y se restan de la existencia actual,
+    la cantidad comprada.
+*/
 //Se declaran las variables
 //Precio de compra
 const PRECIO = 20;

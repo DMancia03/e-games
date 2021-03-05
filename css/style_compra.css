@@ -192,3 +192,25 @@ footer{
     text-align: center;
     color: #FCFBF8;
 }
+
+@media(max-width: 1200px){
+    #producto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #producto img{
+        width: 20%;
+    }
+
+    #fila-3, #fila-3 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #row-4{
+        display: flex;
+        flex-direction: column;
+    }
+}
