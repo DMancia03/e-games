@@ -55,13 +55,14 @@
                         <p>Steam</p>
                         <p>Epic Game Store</p>
                         <p>Nintendo eShop</p>
+                        <p>Total:</p>
                     </div>
                     <div>
                         <h2 class="title-2">Existencias:</h2>
                         <p id="existencias_steam">10</p>
                         <p id="existencias_epic">10</p>
                         <p id="existencias_nintendo">10</p>
-                        <p id="existencias_total">Total: 30</p>
+                        <p id="existencias_total">30</p>
                     </div>
                     <div>
                         <h2 class="title-2" >Precio:</h2>
@@ -90,7 +91,7 @@
                         <div class="padding-1 div-form">
                             <label for="slctPlataforma" class="label-1">Plataforma:</label>
                             <select name="slctPlataforma" id="slctPlataforma" oninput="disableCantidad(this)" class="input-1" disabled>
-                                <option value="">Elige una plataforma</option>
+                                <option value="">Escoge una plataforma</option>
                                 <option value="Steam">Steam</option>
                                 <option value="Epic Game Store">Epic Game Store</option>
                                 <option value="Nintendo eShop">Nintendo eShop</option>
@@ -101,24 +102,25 @@
                             <input type="number" name="txtCantidad" id="txtCantidad" class="input-1" placeholder="¿Cuántos compraras?" min="0" max="10" oninput="cotizacion(this)" disabled>
                         </div>
                     </div>
-                    <div class="border-1 padding-2">
+                    <div id="factura" class="border-1 padding-2">
                         <div class="padding-2">
                             <h3 class="title-1">Cotización</h3>
                         </div>
-                        <div class="padding-1">
+                        <div class="padding-2">
                             <p class="factura-1" id="nombre">Nombre: No ingresado.</p>
                             <p class="factura-1" id="correo">Corre del titular: No ingresado.</p>
-                            <p class="factura-1" id="subtotal">Subtotal: 0</p>
-                            <p class="factura-1" id="iva">Iva: 0</p>
-                            <p class="factura-1" id="total">Total: 0</p>
+                            <p class="factura-1" id="subtotal">Subtotal: $0</p>
+                            <p class="factura-1" id="iva">Iva: $0</p>
+                            <p class="factura-1" id="total">Total: $0</p>
                         </div>
-                        <div class="padding-2">
-                            <button type="button" name="btnComprar" id="btnComprar" value="comprar" class="btn-1" onclick="compra()" disabled>Comprar</button>
+                        <div class="div-form-2">
+                            <button type="button" name="btnComprar" id="btnComprar" value="comprar" class="btn-1 padding-2" onclick="compra()" disabled>Comprar</button>
+                            <button type="button" name="btnCotizar" id="btnCotizar" value="cotizacion" class="btn-1 padding-2" onclick="cotizacion(document.getElementById('txtCantidad'))" disabled>Cotización</button>
                         </div>
                     </div>
-                    <div class="padding-1">
+                    <!--<div class="padding-1">
                         <img src="../img/hades-3.jpg" alt="Hades" class="img-1">
-                    </div>
+                    </div>-->
                 </div>
             </form>
         </article>
