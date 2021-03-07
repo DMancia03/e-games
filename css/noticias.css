@@ -1,0 +1,173 @@
+@font-face{
+    src: url('tipografia/Exorcista_-Jed_40.ttf');
+    font-family: Exorcista;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #260101;
+    position: fixed;
+    z-index: 2;
+}
+
+header div{
+    width: 30%;
+    box-sizing: border-box;
+}
+
+header div a{
+    text-decoration: none;
+}
+
+header div h1{
+    font-family: Exorcista;
+    color: #D99923;
+    padding-left: 1em;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a{
+    padding: 1em;
+    text-decoration: none;
+    color: #FCFBF8;
+}
+
+nav a:hover{
+    background-color: #590C0C;
+}
+.portada{
+    position: relative;
+    background-color: black;
+}
+.portada img{
+    width: 100%;
+    opacity: 0.2;
+  
+}
+article{
+    padding: 1em;
+    background-color: rgb(19, 23, 36);
+}
+.portada #Portada_Titulo{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 50%;
+    text-align: center;
+    border: solid white 10px;
+    padding: 1em;
+    color: white;
+    font-size: 4em;
+    
+}
+#Portada_Titulo *{
+    font-family: Exorcista;
+}
+#Portada_Titulo p{
+    font-size: 0.5em;
+}
+.carrusel{
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+.boton{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+
+    text-align: center;
+    height: fit-content;
+    padding: 0.5em;
+    border-radius: 100%;
+    display: block;
+    margin: auto 0;
+    top: 35%;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.atras{
+    left: 5%;
+}
+.adelante{
+    right: 5%;
+}
+#Noticia_Img{
+    width: 100%;
+    height: 100%;
+}
+.carrusel a p{
+    color: white;
+    background: black;
+    opacity: 0.8;
+    padding: 2em;
+    font-size: 1.3em;
+}
+.carrusel a{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-decoration: none;
+}
+section.futuro{
+    background-color:black;
+    padding: 1em;
+    opacity: 0.4;
+    background-image: url("https://as.com/meristation/imagenes/2019/05/08/noticias/1557293702_065109_1557293773_noticia_normal.jpg") ;
+}
+.futuro h3{
+    opacity: 10;
+    font-family: Exorcista;
+    text-align: center;
+    font-size: 1.3em;
+}
+.grid{
+  
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-size: 100%; 
+}
+.imagen{
+    opacity: 1;
+    grid-column: 1/6;
+}
+.imagen img{
+    opacity: 1;
+    width: 100%;
+}
+.txt{
+    opacity: 1;
+    padding: 1em;
+    grid-column: 6/13;
+}
+@media(max-width: 1000px){
+    #Portado_Titulo{
+        padding: 20px;
+    }
+    #Portada_Titulo *{
+        font-size: 25px;
+    }
+    #Portada_Titulo p{
+        font-size: 15px;
+    }
+    .portada #Portada_Titulo{
+        left: 15%;
+    }
+
+}
